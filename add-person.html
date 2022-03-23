@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Добавление человека</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <div class="header">
+                <div class="menu">
+                    <a href="index.html" type="button">
+                        <img src="img/Back.png" alt="">
+                    </a>
+                </div>
+        
+                <div class="logo">
+                    <a href="index.html" type="button">
+                        <img src="img/gargalo.png" alt="">
+                    </a>
+                </div>
+        
+                <div class="profile">
+                    <img src="img/Ellipse 56.png" alt="">
+                </div>
+            </div>
+            
+            <hr>
+        </div>
+        
+    </header>
+
+    <div class="add-person main-wrap">
+        <div class="container">
+            <h4>Основная информация</h4>
+            <div class="fields-rus fields">
+                <div>
+                    <input type="text" placeholder="Фамилия" required class="inputValidateNames">
+                    <input type="text" placeholder="Имя" required class="inputValidateNames">
+                </div>
+                <div>
+                    <input type="text" placeholder="Отчество" required class="inputValidateNames inputWide">
+                </div>
+                <div>
+                    <input type="text" placeholder="ФИО отца" required class="inputValidateNames inputWide">
+                </div>
+                <div>
+                    <input type="text" placeholder="ФИО матери" required class="inputValidateNames inputWide">
+                </div>
+                <div>
+                    <select name="sex" id="" class="select selectWide">
+                        <option value="" disabled selected hidden>Пол</option>
+                        <option value="male">Мужчина</option>
+                        <option value="female">Женщина</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="marriage fields">
+                <h4>Женат / Замужем</h4>
+                <div>
+                    <input type="text" placeholder="ФИО супруга(и)" required class="inputValidateNames inputWide">
+                </div>
+            </div>
+
+            <div class="bearth-death fields">
+                <h4>Дата рождения / Смерти</h4>
+                <div>
+                    <input class="date-input" type="date" placeholder="Дата рождения">
+                    <input class="date-input" type="date" placeholder="Дата смерти">
+                </div>
+            </div>
+
+            <div class="contact-info fields">
+                <h4>Контактная информация</h4>
+                <div class="contact-info-fields">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Номер телефона" required pattern="[\+]*[7-8]{1}\s?*9[0-9]{9}">
+                </div>
+            </div>
+            <div class="fields">
+                <h4>Краткая биография</h4>
+                <div>
+                    <textarea name="bio" class="textareaBio inputWide" placeholder=""></textarea>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <input type="button" class="main-button inputWide" value="Добавить">
+                <p class="sub wide">
+                    Человек будет добавлен после расмотрения модератором
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="btn-group">
+                <button><span><img src="img/Home.png" alt=""></span></button>
+                <button><span><img src="img/Calendar.png" alt=""></span></button>
+                <button><span><img src="img/Search.png" alt=""></span></button>
+                <button><span><img src="img/Message.png" alt=""></span></button>
+                <button><span><img src="img/App.png" alt=""></span></button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/inputValidation.js"></script>
+</body>
+</html>

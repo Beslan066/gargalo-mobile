@@ -1,0 +1,87 @@
+input {
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.fields input, .fields select, .fields textarea {
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #CFE3E7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    /* width: 158px; */
+    margin-right: 8px;
+}
+
+.fields input::placeholder, .fields select::placeholder, .fields textarea::placeholder {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* padding: 5px; */
+    color: #7A969C;
+}
+
+.main-wrap {
+    margin-bottom: 60px;
+}
+
+.main-wrap h4 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #7A969C;
+    margin-top: 32px;
+}
+
+.inputWide, .selectWide {
+    width: 100%;
+}
+
+.textareaNote, .textareaBio {
+    height: 100px !important;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.sub {
+    text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #567F88;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.wide {
+    width: 100%;
+}
+
+input.main-button {
+    background-color: #054857;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+input.main-button:hover {
+    background-color: #3498db;
+    transition: 0.2s;
+}
+
+
+
+/* Media for PostPage*/
+
+@media screen and (max-width: 375px) {
+    
+}

@@ -10,8 +10,10 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1120px;
+    /* width: 1120px; */
+    width: 100%;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 button {
@@ -50,7 +52,7 @@ header hr {
     border:none;
     color:#E3EFF1;
     background-color: #E3EFF1;
-    width: 1120px;
+    /* width: 1120px; */
 
 }
 
@@ -242,19 +244,20 @@ footer  .container{
     background-color: #E3EFF1;
     margin-top: 15px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .btn-group {
-   margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn-group button{
     background-color: #ffffff;
     border: none;
-    margin-right: 20px;
-
+    /* margin-right: 14px; */
 }
 
 
@@ -1000,7 +1003,7 @@ button.active {
 
 /*  Стили для страницы Мои Личные настройки */
 
-.my-settings input{
+.my-settings input {
     height: 40px;
     left: 0px;
     top: 80px;
@@ -1010,15 +1013,13 @@ button.active {
     border-radius: 6px;
     width: 158px;
     margin-right: 8px;
-
-    
 }
 
 .my-settings input::placeholder {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    padding: 5px;
+    /* padding: 5px; */
     color: #7A969C;
 }
 
@@ -1031,7 +1032,6 @@ button.active {
     align-items: center;
     color: #7A969C;
     margin-top: 32px;
-
 }
 
 .my-settings h4:first-child {
@@ -1042,11 +1042,6 @@ button.active {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
-}
-
-.fields-rus div:last-child input:last-child {
-    width: 328px;
-    margin-top: 8px;
 }
 
 .fields-ing div:last-child input:last-child {
@@ -1102,10 +1097,6 @@ button.active {
 
 
 
-
-
-
-
 /* Media for PostPage*/
 
 @media screen and (max-width: 375px) {
@@ -1114,7 +1105,6 @@ button.active {
         height: 200px;
     }
 
-    
     header .container {
         justify-content: start;
         width: auto;
